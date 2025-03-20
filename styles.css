@@ -1,0 +1,359 @@
+/* ---------- CSS Variables ---------- */
+:root{
+    /* Color theme taken from  Adobe Color */
+    /* Color Theme Swatches in Hex */
+    --cream: #EEF2F0;
+    --dk-blue: #64A0A9; 
+    --med-blue: #58B6C0;
+    --lt-blue: #78BDC1;
+
+    /* Other swatches for text & accents */
+    --white: #fff;
+    --lt-gray: #eaeaea;
+    --med-gray: #555;
+    --dk-gray: #222;
+
+    /* Shadows for Elements that are Not Square */
+    --filter-shadow-sm: drop-shadow(-3px 3px 7px var(--med-gray));
+    --filter-shadow-lg: drop-shadow(-6px 6px 10px var(--med-gray));
+
+    /* Adobe Font Family with Fallbacks */
+    --fonts: "halogen-flare", Tahoma, sans-serif;
+}
+
+/* ---------- Body Styles ---------- */
+/* TO DO */
+body{
+    background-color: var(--lt-blue);
+    background-image: url("images/topography.svg");
+    text-decoration-color: var(--dk-gray);
+    line-height: 1.5;
+    font-family: var(--fonts);
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+/* This overlays a semi-transparent light gray color over our svg background to lighten it, you do not need to edit this code */
+body::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--lt-gray);
+    filter: opacity(30%);
+    z-index: -1;
+}
+
+/* ---------- Header Styles ---------- */
+/* TO DO */
+header{
+    background-color: var(--cream);
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+/* ---------- Logo Link Styles ---------- */
+/* TO DO */
+.logo{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url("images/logo.png");
+}
+/* ---------- Hover Styles for Logo Image and Link ---------- */
+header > a:hover{
+    background-color: var(--cream);
+    float: left;
+    margin-left: 2rem;
+    padding: 0;
+}
+
+header a:hover img{
+    filter: var(--filter-shadow-sm);
+}
+
+/* ---------- Image Styles ---------- */
+/* TO DO */
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* Logo Image Styles  */
+header img{
+    filter: var(--filter-shadow-lg);
+    margin: 0;
+}
+
+/* ---------- H1 Styles ---------- */
+/* TO DO */
+h1{
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-top: 1.25rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2rem;
+    font-family: var(--fonts);
+    font-weight: 700 bold;
+    font-style: normal;
+}
+/* ---------- Link Styles ---------- */
+/* TO DO */
+link{
+    display: block;
+    padding: 1rem;
+    text-decoration-color: var(--dk-gray);
+}
+/* ---------- Navigation Styles ---------- */
+/* TO DO */
+nav{
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+/* ---------- Nav Ul Styles --------- */
+/* TO DO */
+nav ul{
+    list-style: none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2rem;
+    padding: 0;
+}
+/* ---------- Nav Li Styles --------- */
+/* TO DO */
+nav li{
+    float: left;
+}
+/* ---------- Nav a Styles --------- */
+/* TO DO */
+nav a{
+    background-color: var(--lt-blue);
+    border-radius: 0 24px;
+    text-decoration-color: var(--dk-gray);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    filter: var(--filter-shadow-lg);
+}
+/* ---------- Navigation a Hover Styles ---------- */
+nav a:hover{
+    background-color: var(--dk-blue);
+    filter: var(--filter-shadow-sm);
+}
+
+/* ---------- Link Hover Styles ---------- */
+/* TO DO */
+a:hover{
+    font-weight: bold;
+}
+/* ---------- Main Styles ---------- */
+/* TO DO */
+main{
+    clear: both;
+    background: linear-gradient(var(--cream) 0%, var(--lt-blue) 20%, var(--med-blue) 50%, var(--dk-blue) 80%, var(--med-gray) 100%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+/* ---------- Section Styles ---------- */
+/* TO DO */
+section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+/* ---------- H2 Styles ---------- */
+/* TO DO */
+h2{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 3rem;
+    font-family: var(--fonts);
+    font-weight: 700;
+    font-style: normal;
+}
+/* ---------- Paragraph Styles ---------- */
+/* TO DO */
+p{
+    width: 100%;
+    max-width: 65ch;
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+/* For the paragraph under the h2 in the main */
+/* TO DO */
+.descendant main > p{
+    text-align: center;
+    font-size: 1.25rem;
+}
+/* ---------- H3 Styles ---------- */
+/* TO DO */
+h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: var(--fonts);
+    font-style: normal;
+}
+/* ---------- About Section Styles ---------- */
+/* TO DO */
+#about div{
+    float: left;
+    width: 500px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+/* For the Book Services Link/button styles */
+/* TO DO */
+#about a{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--med-blue);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
+/* For the hover styles on the book services btn/link */
+#about a:hover{
+    background: var(--dk-blue);
+    filter: var(--filter-shadow-sm);
+}
+
+/* About Image Styles */
+/* TO DO */
+#about img{
+    width: 640px;
+    max-width: 640px;
+    height: auto;
+}
+/* ---------- Services Section Styles ---------- */
+/* TO DO */
+#services{
+    clear: both;
+}
+/* For the sections inside Services */
+/* TO DO */
+#services section{
+    width: 368px;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/* ---------- H4 Styles ---------- */
+/* TO DO */
+h4{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-bottom: 0.5;
+    margin-left: 0;
+}
+/* For the Paragraphs with prices in the services sections */
+#services section p:last-of-type{
+    text-align: center;
+    font-weight: bold;
+    border-bottom-width: 3px solid var(--cream);
+}
+
+/* ---------- Location Section Styles ---------- */
+/* TO DO */
+#location{
+    clear: both;
+    height: 600px;
+}
+/* Location Image Styles */
+/* TO DO */
+#location > img{
+    float: left;
+    margin: 1rem;
+}
+/* For the div inside of the location section */
+/* TO DO */
+#location div{
+    width: 600px;
+    float: right;
+    margin-left: 2rem;
+}
+/* For the address text */
+/* TO DO */
+#address{
+    font-style: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* For the links in the address tag */
+/* TO DO */
+#address a{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+/* Location map image styles */
+#location div img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Footer Styles ---------- */
+/* TO DO */
+footer{
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    background-color: var(--med-gray);
+    text-decoration-color: var(--cream);
+    text-align: center;
+    clear: both;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
